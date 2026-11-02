@@ -1,0 +1,51 @@
+/* Silver-neutral surfaces. Iridescence is confined to light/reflection, never status. */
+:root {
+  --bg: #e8ecef;
+  --glass-ink: #26303d;
+  --glass-muted: #586574;
+  --glass-edge: rgba(106,119,136,.19);
+  --glass-shadow: 0 10px 35px rgba(51,66,87,.07), inset 0 1px 0 rgba(255,255,255,.94), inset 0 -1px 0 rgba(215,221,235,.32);
+  --prism-surface: linear-gradient(126deg,rgba(240,251,251,.26),rgba(255,255,255,.18) 42%,rgba(232,229,249,.26)),rgba(255,255,255,.66);
+}
+.app.role-app {
+  background: radial-gradient(ellipse at 12% 6%,rgba(210,223,225,.75),transparent 50%),radial-gradient(ellipse at 88% 10%,rgba(222,220,232,.7),transparent 46%),linear-gradient(145deg,#eef0ef,#e6eaf0 55%,#e6ebe9);
+}
+.role-sidebar {
+  background: linear-gradient(155deg,rgba(239,250,251,.38),rgba(255,255,255,.3) 43%,rgba(234,231,248,.34)),rgba(255,255,255,.48);
+  border-color: rgba(255,255,255,.8);
+  backdrop-filter: blur(28px) saturate(1.15);
+  -webkit-backdrop-filter: blur(28px) saturate(1.15);
+  box-shadow: 0 16px 48px rgba(55,69,88,.075),inset 1px 1px 0 #ffffffed,inset -1px -1px 0 #d8ddea7d;
+}
+.role-nav button.active { background: linear-gradient(115deg,#e3eef1d9,#e6e5f4c9); box-shadow: inset 0 1px 0 #fff,0 3px 10px #5069870b; color: #294c73; }
+.role-nav button.active svg { color: #345d89; }
+.role-app .workbench-stat,.role-app .workbench-panel,.role-app .service-launchpad,
+.role-app :is(.panel,.management-panel,.approval-card,.fleet-card,.event-card) {
+  background: var(--prism-surface);
+  backdrop-filter: blur(20px) saturate(1.08);
+  -webkit-backdrop-filter: blur(20px) saturate(1.08);
+  border-color: rgba(255,255,255,.84);
+}
+.role-app .role-subnav { background: rgba(255,255,255,.46); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+.role-app .role-scene-note,.role-app .role-scene-tools { background: var(--prism-surface); }
+.role-twin-home .role-page-heading,.role-twin-home .system-footer { display: none; }
+.role-app.role-twin-home main.role-main { height: 100dvh; min-height: 680px; display: flex; flex-direction: column; padding: 18px 20px 18px 12px; }
+.role-twin-home .role-topbar { flex-shrink: 0; margin-bottom: 12px; padding: 0 7px; }
+.role-twin-home .twin-home { flex: 1; }
+.role-twin-home .takeover-banner,.role-twin-home .inline-error { flex-shrink: 0; }
+@media (min-width: 901px) { .role-twin-home .twin-home { min-height: 0; } }
+@media (max-width: 1200px) and (min-width: 901px) {
+  .role-app.role-twin-home main.role-main { padding-left: 10px; padding-right: 16px; }
+}
+@media (max-width: 900px) {
+  .role-app.role-twin-home main.role-main { height: auto; min-height: 0; padding: 16px 18px 18px; }
+  .role-twin-home .role-topbar { margin-bottom: 14px; }
+  .role-twin-home .twin-home { flex: none; }
+}
+@media (max-width: 600px) {
+  .role-app.role-twin-home main.role-main { padding: 12px 10px 16px; }
+  .role-twin-home .role-topbar { padding-inline: 3px; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .role-sidebar,.role-app .workbench-stat,.role-app .workbench-panel,.role-app :is(.panel,.management-panel,.approval-card,.fleet-card,.event-card) { background: #f3f5f7; backdrop-filter: none; -webkit-backdrop-filter: none; }
+}

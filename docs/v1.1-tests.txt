@@ -1,0 +1,36 @@
+(node:43384) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Hub registry derives capabilities and current availability, protects task context and exposes unified twin state (923.6509ms)
+✔ Natural-language delivery shares OA, execution receipts and human handover; planning is idempotent (730.102ms)
+✔ Resources are revalidated on execution and unavailable resources produce explainable blocked tasks (631.2177ms)
+✔ Patrol uses the shared resource registry and follows legacy simulator completion (784.291ms)
+✔ Meeting booking rechecks capacity and overlapping slots and permits safe cancellation by owner (623.4998ms)
+✔ Fire event is dynamic, rejection keeps the alert open, and confirmation waits for device receipts before closure (654.8867ms)
+✔ Fall assistance coordinates job resources and requires explicit human resolution, without simulated arrival claims (568.0285ms)
+✔ Takeover blocks new hub execution and device failure propagates to hub without false completion (825.1529ms)
+✔ Fire plan refuses empty device capability and meeting execution refuses expired reservation time (460.6699ms)
+(node:47360) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Authentication, origin validation, role restrictions, and simulator credentials (1249.7734ms)
+✔ Device commands acknowledge only after simulation; capability and offline failures are explicit (70.3445ms)
+✔ Idempotency replays the original command and rejects conflicting reuse (26.291ms)
+✔ Adapter failure and expired acknowledgement never update the device to a false success (64.2725ms)
+✔ Backend watchdog times out unacknowledged commands even when simulator stops ticking (572.5122ms)
+✔ Security event enforces discovery-confirm-dispatch-resolve-review-archive closure (29.5577ms)
+✔ Fire drill requires explicit confirmation, dispatches linked commands, then closes (52.3698ms)
+✔ An emergency command conflict rolls back every partial command in the operation (67.4344ms)
+✔ Delivery is approval-gated, simulated to arrival, signed, and archived (147.4566ms)
+✔ OA operations preserve request ownership and permission approval never elevates a user (115.9847ms)
+✔ Delivery degradation refuses low battery and switches to exception when a route is blocked (100.6454ms)
+✔ Agent records read tools and does not execute a high-risk emergency tool (43.3375ms)
+✔ Human takeover reauthenticates, blocks Agent writes, checks recovery, and preserves task state (415.5989ms)
+✔ Manual command cancellation requires takeover authority and rejects every terminal command (204.1156ms)
+✔ Audit chain verifies and database rejects casual audit mutation (18.3764ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6393.1905

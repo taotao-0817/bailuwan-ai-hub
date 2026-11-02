@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-31T16:57:48.825Z",
+  "task": {
+    "id": "HUB-595A37A1",
+    "status": "completed",
+    "interpretation": {
+      "source": "model",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "summary": "从智慧运营中心配送2公斤资料到生态会客厅，交给运营值班员",
+      "confidence": 0.97,
+      "requestId": "021d8efb-eddb-400f-80e9-079151286cf0",
+      "latencyMs": 1165,
+      "durationMs": 1165,
+      "usage": {
+        "total_tokens": 946
+      }
+    }
+  },
+  "order": {
+    "id": "DLV-69BA27ED",
+    "status": "archived",
+    "approvalId": null,
+    "approvalPolicy": "automatic_validation",
+    "progress": 100,
+    "vehicleId": "UAV-01",
+    "routeDistance": 75.63
+  },
+  "audit": {
+    "valid": true,
+    "count": 24,
+    "actions": [
+      "hub.plan",
+      "delivery.auto_dispatched",
+      "hub.execution.started",
+      "model.goal_interpreted",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "hub.execution.sync",
+      "delivery.delivered",
+      "hub.execution.sync",
+      "delivery.sign",
+      "delivery.archive",
+      "hub.completed"
+    ]
+  }
+}

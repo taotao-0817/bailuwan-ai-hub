@@ -1,0 +1,41 @@
+配送闭环完成：HUB-72174313
+巡查闭环完成：HUB-2B5C9A09
+会议预订与模拟通知完成：HUB-42810A4C
+消防闭环完成：HUB-D673FFF6
+跌倒协助闭环完成：HUB-D22CF671
+{
+  "mode": "simulation",
+  "results": [
+    {
+      "type": "delivery",
+      "id": "HUB-72174313",
+      "status": "completed"
+    },
+    {
+      "type": "patrol",
+      "id": "HUB-2B5C9A09",
+      "status": "completed"
+    },
+    {
+      "type": "meeting",
+      "id": "HUB-42810A4C",
+      "status": "completed"
+    },
+    {
+      "type": "fire",
+      "id": "HUB-D673FFF6",
+      "status": "completed"
+    },
+    {
+      "type": "fall",
+      "id": "HUB-D22CF671",
+      "status": "completed"
+    }
+  ],
+  "audit": {
+    "valid": true,
+    "count": 114,
+    "head": "7f576b575207098e44a517b7eeac92fdb2a6e29de61233c610e4860da5d0ac1e",
+    "protection": "SQLite append-only triggers + SHA-256 chain; external immutable anchoring is required for production"
+  }
+}

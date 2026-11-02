@@ -1,0 +1,59 @@
+.delivery-route-summary {
+  padding: 16px;
+  border: 1px solid #d7e2ef;
+  border-radius: 12px;
+  background: rgba(246,249,253,.93);
+  color: #273b55;
+  margin: 12px 0;
+  min-width: 0;
+}
+.delivery-route-summary header,
+.delivery-route-summary li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+.delivery-route-summary header h4 { font-size: 15px; margin: 0; color: #233a59; }
+.delivery-route-progress { margin: 12px 0; }
+.delivery-route-progress span { display: flex; justify-content: space-between; font-size: 13px; color: #40536e; }
+.delivery-route-progress progress { width: 100%; height: 7px; accent-color: #285bd5; }
+.dispatch-history { margin-bottom: 22px; }
+.delivery-route-summary header span,
+.delivery-route-summary dt { font-size: 12px; color: #50637c; }
+.delivery-route-summary .delivery-route-locations { font-size: 14px; margin: 6px 0; color: #40536e; }
+.delivery-route-summary dl { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(95px,100%),1fr)); gap: 10px; margin: 14px 0 0; }
+.delivery-route-summary dd { color: #213f70; font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; margin: 1px 0 0; }
+.delivery-route-summary details { margin-top: 12px; }
+.delivery-route-summary summary { color: #27599c; font-size: 13px; cursor: pointer; padding: 4px 0; }
+.delivery-route-summary details p,
+.delivery-route-summary li { margin: 8px 0 0; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+.delivery-route-summary ul { list-style: none; margin: 0; padding: 0; }
+.delivery-route-summary li { border-top: 1px solid #dfe6f0; padding-top: 6px; }
+.delivery-route-summary li strong { font-weight: 600; }
+.delivery-route-compact { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; color: #4a607b; }
+
+.delivery-map-key {
+  position: absolute;
+  inset: auto 14px 14px auto;
+  z-index: 3;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 7px 10px;
+  border: 1px solid #e1e7ee;
+  border-radius: 8px;
+  background: rgba(255,255,255,.92);
+  color: #354960;
+  font-size: 12px;
+  pointer-events: none;
+}
+.delivery-map-key span::before {
+  display: inline-block;
+  width: 14px;
+  margin: 0 5px 3px 0;
+  border-top: 2px dashed #b86a1e;
+  content: '';
+}
+.delivery-map-key span:last-child::before { border-top: 2px solid #2867c4; }
